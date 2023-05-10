@@ -50,3 +50,6 @@
 --  JOIN users AS owners ON project_owners.user_id = owners.id
 --  JOIN project_managers ON projects.project_manager_id = project_managers.manager_id
 --  JOIN users AS managers ON project_managers.user_id = managers.id;
+
+-- admin user query
+INSERT into users (first_name, last_name, username, password, email, phone, role) VALUES ('Alex', 'Serban', 'aserb', 'admin1234', 'my.email@gmail.com', '0123 123 321', 'Admin');
