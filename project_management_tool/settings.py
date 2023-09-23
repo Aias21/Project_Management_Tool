@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'pmt_django',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres1',
+        'USER': os.environ.get(USER), # create .env file and export the variable, file should be executed with source .env file before running the project
+        'PASSWORD': os.environ.get(PASSWORD), # ^
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
