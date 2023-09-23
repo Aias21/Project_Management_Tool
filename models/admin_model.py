@@ -74,21 +74,4 @@ class Admin(BaseModel):
         BaseModel.disconnect_db(conn)
 
 
-# if __name__ == "__main__":
-
-
-    # Admin.log_in('aserb', 'admin1234')
-    # Admin.create_internal_user(f_name='Alex', l_name='Serban', email='alex.serban@email.com', phone='0257 213 123',
-    #                            role='Admin')
-    # Admin.create_internal_user(f_name='Bill', l_name='Doors', email='b.do@email.com', phone='321-123-4563',
-    #                            role='Manager')
-    # Admin.create_internal_user(f_name='Lock', l_name='Smith', email='lock.s@email.com', phone='0234567891',
-    #                            role='Manager')
-    # Admin.create_internal_user(f_name='Dobby', l_name='Do', email='do.do@email.com', phone='$*#!)(@#(2!',
-    #                            role='Employee')
-    # Admin.create_internal_user(f_name='Yes', l_name='Master', email='y_master@email.com', phone='1234 456(3210)',
-    #                            role='Employee')
-    # Admin.create_internal_user(f_name='Dobby', l_name='Do', email='do.do@email.com', phone='$*#!)(@#(2!',
-    #                            role='Employee')
-    # Admin.delete_user('dodo')
 
